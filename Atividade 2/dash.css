@@ -1,0 +1,41 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr  4fr;
+    grid-template-rows: 70px auto 50px;
+    grid-template-areas: 
+    "menu topo"
+    "menu corpo"
+    "menu rodape";
+}
+.menu{ background-color: rgb(9, 222, 151); 
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+}
+
+.topo{
+    background-color: antiquewhite; 
+    grid-area: topo
+}
+
+.corpo{
+    background-color: rgb(249, 141, 10);
+    grid-area: corpo;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape{
+    background-color: rgb(254, 0, 0);
+    grid-area: rodape;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5px;
+}
